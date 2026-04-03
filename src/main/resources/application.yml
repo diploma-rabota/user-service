@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/user_service_db
+    username: user_service_user
+    password: user_service_password
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    sql-migration-prefix: ""
+    sql-migration-separator: "_"
+    sql-migration-suffixes: .sql
+    out-of-order: false
