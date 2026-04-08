@@ -1,4 +1,4 @@
-package ru.alexandr.orderservice.entity
+package ru.alexandr.userservice.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import jakarta.persistence.SequenceGenerator
 import jakarta.persistence.Table
-import ru.alexandr.orderservice.config.security.CustomUserDetails
+import ru.alexandr.userservice.config.security.CustomUserDetails
 
 @Entity
 @Table(name = "duser")

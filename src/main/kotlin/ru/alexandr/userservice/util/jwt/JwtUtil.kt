@@ -1,11 +1,10 @@
-package ru.alexandr.orderservice.util.jwt
+package ru.alexandr.userservice.util.jwt
 
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.SignatureAlgorithm
 import io.jsonwebtoken.security.Keys
 import org.springframework.stereotype.Component
-import ru.alexandr.orderservice.config.security.CustomUserDetails
-import ru.alexandr.orderservice.entity.User
+import ru.alexandr.userservice.config.security.CustomUserDetails
 import java.util.Date
 
 @Component

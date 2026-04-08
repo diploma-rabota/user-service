@@ -1,4 +1,4 @@
-package ru.alexandr.orderservice.config.security
+package ru.alexandr.userservice.config.security
 
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
@@ -8,8 +8,8 @@ import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
-import ru.alexandr.orderservice.service.UserDetailsService
-import ru.alexandr.orderservice.util.jwt.JwtUtil
+import ru.alexandr.userservice.service.UserDetailsService
+import ru.alexandr.userservice.util.jwt.JwtUtil
 
 @Component
 class JwtAuthenticationFilter(

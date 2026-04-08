@@ -1,16 +1,16 @@
-package ru.alexandr.orderservice.service
+package ru.alexandr.userservice.service
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
-import ru.alexandr.orderservice.config.security.CustomUserDetails
-import ru.alexandr.orderservice.controller.JwtResponse
-import ru.alexandr.orderservice.controller.LoginRequest
-import ru.alexandr.orderservice.controller.RegistrationRequest
-import ru.alexandr.orderservice.entity.User
-import ru.alexandr.orderservice.entity.toCustomUserDetails
-import ru.alexandr.orderservice.repository.UserRepository
-import ru.alexandr.orderservice.util.jwt.JwtUtil
+import ru.alexandr.userservice.config.security.CustomUserDetails
+import ru.alexandr.userservice.controller.JwtResponse
+import ru.alexandr.userservice.controller.LoginRequest
+import ru.alexandr.userservice.controller.RegistrationRequest
+import ru.alexandr.userservice.entity.User
+import ru.alexandr.userservice.entity.toCustomUserDetails
+import ru.alexandr.userservice.repository.UserRepository
+import ru.alexandr.userservice.util.jwt.JwtUtil
 
 @Service
 class RegistrationService(

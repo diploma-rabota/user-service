@@ -1,4 +1,4 @@
-package ru.alexandr.orderservice.config.security
+package ru.alexandr.userservice.config.security
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

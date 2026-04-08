@@ -1,12 +1,10 @@
-package ru.alexandr.orderservice.controller
+package ru.alexandr.userservice.controller
 
-import org.springframework.security.authentication.AuthenticationManager
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import ru.alexandr.orderservice.service.RegistrationService
+import ru.alexandr.userservice.service.RegistrationService
 
 @RestController
 @RequestMapping("/api")

@@ -1,4 +1,4 @@
-package ru.alexandr.orderservice
+package ru.alexandr.userservice
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

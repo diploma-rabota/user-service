@@ -1,12 +1,11 @@
-package ru.alexandr.orderservice.service
+package ru.alexandr.userservice.service
 
-import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.stereotype.Service
-import ru.alexandr.orderservice.config.security.CustomUserDetails
-import ru.alexandr.orderservice.repository.UserRepository
+import ru.alexandr.userservice.config.security.CustomUserDetails
+import ru.alexandr.userservice.repository.UserRepository
 
 @Service
 class UserDetailsService(

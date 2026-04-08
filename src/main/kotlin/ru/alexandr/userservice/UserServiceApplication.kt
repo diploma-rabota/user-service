@@ -1,4 +1,4 @@
-package ru.alexandr.orderservice
+package ru.alexandr.userservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
