@@ -38,5 +38,6 @@ fun User.toCustomUserDetails() : CustomUserDetails {
     return CustomUserDetails(
         email = email,
         password = userPassword,
-        )
+        id = id,
+    )
 }

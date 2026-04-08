@@ -18,6 +18,7 @@ class UserDetailsService(
         return CustomUserDetails(
             email = user.email,
             password = user.userPassword,
+            id = user.id,
         )
     }
 }

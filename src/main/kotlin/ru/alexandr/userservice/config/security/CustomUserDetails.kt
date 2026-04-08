@@ -5,21 +5,26 @@ import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
 
 class CustomUserDetails(
+    val id: Long,
     val email: String,
     private val password: String,
 ) : UserDetails {
 
     override fun getUsername() = email
+
     override fun getPassword() = password
-    override fun getAuthorities()  =
+
+    override fun getAuthorities() =
         mutableListOf(GrantedAuthority { "ROLE_USER" })
 
     override fun isAccountNonExpired() = true
+
     override fun isAccountNonLocked() = true
+
     override fun isCredentialsNonExpired() = true
+
     override fun isEnabled() = true
 }
-
 
 
 object SecurityUtils {

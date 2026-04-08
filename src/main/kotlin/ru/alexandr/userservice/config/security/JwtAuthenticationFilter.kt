@@ -25,13 +25,10 @@ class JwtAuthenticationFilter(
         val authHeader = request.getHeader("Authorization")
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
-            println("HEADER OK: $authHeader")
 
             val token = authHeader.substring(7)
-            println("TOKEN = $token")
 
             val email = jwtUtil.extractUsername(token)
-            println("EMAIL FROM TOKEN = $email")
 
 
             if (email != null && SecurityContextHolder.getContext().authentication == null) {
