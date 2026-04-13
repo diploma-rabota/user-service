@@ -30,6 +30,7 @@ class SecurityConfig(
             .authorizeHttpRequests { auth ->
                 auth
                     .requestMatchers("/api/register", "/api/login").permitAll()
+                    .requestMatchers("/internal/**").permitAll()
 
                     .requestMatchers("/api/companies/**", "/api/products/**").permitAll()
 
