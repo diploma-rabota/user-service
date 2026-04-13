@@ -34,7 +34,6 @@ class JwtAuthenticationFilter(
             if (email != null && SecurityContextHolder.getContext().authentication == null) {
 
                 val userDetails = userDetailsService.loadUserByUsername(email)
-                println("USER DETAILS LOADED: ${userDetails.username}")
 
                 if (jwtUtil.validateToken(token)) {
 
@@ -51,7 +50,6 @@ class JwtAuthenticationFilter(
                 }
             }
         }
-        println("AUTH = " + SecurityContextHolder.getContext().authentication)
 
         filterChain.doFilter(request, response)
     }
