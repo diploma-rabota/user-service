@@ -1,0 +1,16 @@
+version: "3.9"
+name: progs
+
+services:
+  user-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: user-service
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
